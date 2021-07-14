@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -60,9 +61,6 @@ nav {
 }
 
 .container {
-  /* display: flex; */
-  /* align-items: center; */
-  /* flex-direction: column; */
   width: 80%;
 }
 
@@ -72,9 +70,6 @@ nav {
 .contents {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
-
-.content {
 }
 
 .content-title {
@@ -93,9 +88,7 @@ nav {
   width: 168px;
   height: 44px;
 }
-.content .action-button {
-  /* padding: 10px 24px; */
-}
+
 .action-button a {
   color: #ffffff;
   font-weight: 500;
@@ -164,7 +157,6 @@ nav {
   padding: 15px;
 
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-  /* margin: 30px 30px 30px 0px; */
 }
 
 .player-photo img {
@@ -238,10 +230,6 @@ nav {
 /*---------------------
  Form: Contact Us Section
 ----------------------*/
-
-* {
-  box-sizing: border-box;
-}
 
 .form-heading {
   font-style: normal;
@@ -487,12 +475,6 @@ input[type="submit"]:hover {
     margin: 50px 15px 62px 15px;
   }
 
-  /* .highlight {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
-
   .highlight-heading {
     font-style: normal;
     font-weight: bold;
@@ -514,6 +496,12 @@ input[type="submit"]:hover {
     width: 328px;
     height: 248px;
     display: flex;
+  }
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
   }
 
   .footer-top img {
