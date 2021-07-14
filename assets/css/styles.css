@@ -1,0 +1,118 @@
+/* fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100%;
+  /* width: 1440px; */
+  height: 677px;
+  background: #2d25a0;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+/* 
+.navbar-left ul {
+  list-style-type: none;
+}
+
+.navbar-left li a {
+  display: inline;
+  width: 60px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar-left li a:hover {
+  background-color: orange;
+} */
+
+.navbar-left ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar-left ul li {
+  float: left;
+}
+
+.navbar-left ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navbar-left ul li a:hover {
+  background-color: orange;
+}
+
+.container {
+  /* display: flex; */
+  /* align-items: center; */
+  /* flex-direction: column; */
+  width: 80%;
+}
+
+.header-contents {
+}
+
+.contents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.content {
+}
+
+.content-title {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 80px;
+}
+.action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e02c6d;
+  width: 168px;
+  height: 44px;
+}
+.content .action-button {
+  /* padding: 10px 24px; */
+}
+.action-button a {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.action-button a i {
+  margin: 0px 8px;
+}
+
+.content img {
+  width: 556.01px;
+  height: 438px;
+}
