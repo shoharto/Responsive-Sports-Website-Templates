@@ -19,7 +19,8 @@ header {
   align-items: center;
   flex-direction: column;
 }
-main {
+main,
+footer {
   width: 100%;
   display: flex;
   align-items: center;
@@ -175,4 +176,84 @@ nav {
   font-size: 16px;
   line-height: 26px;
   color: #6c6c6c;
+}
+
+/*---------------------
+ Highlights Section 
+----------------------*/
+
+.all-highlights {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 165px;
+  margin-bottom: 158px;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.highlight {
+}
+
+.highlight-heading {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  color: #0a0826;
+}
+
+.highlight-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+
+  color: #6c6c6c;
+}
+
+.highlight img {
+  width: 567px;
+  height: 427px;
+}
+
+/*---------------------
+ Footer Section 
+----------------------*/
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-top {
+}
+
+.footer-top img {
+  width: 483.87px;
+  height: 110px;
+}
+
+.footer-botom {
+}
+
+.footer-icons {
+}
+.footer-icons .fab {
+  margin: 0px 14px;
+
+  color: #969bab;
+  padding: 7.4px;
+  background-color: lightgray;
+  border-radius: 25px;
+}
+
+.footer-copyright {
+  margin: 20px 0px 63px 0px;
 }
