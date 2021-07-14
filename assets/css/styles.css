@@ -33,7 +33,9 @@ nav {
   margin-top: 42px;
   margin-bottom: 67px;
 }
-
+.mobile-nav {
+  display: none;
+}
 .navbar-left ul {
   list-style-type: none;
   margin: 0;
@@ -246,4 +248,92 @@ nav {
 
 .footer-copyright {
   margin: 20px 0px 63px 0px;
+}
+
+/*-----------------
+ Media Queries 
+----------------*/
+
+/*-----------------
+ Mobile Devices
+----------------*/
+
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+
+  header {
+    height: auto;
+  }
+  .mobile-nav {
+    display: inherit;
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .navbar-left ul {
+    display: none;
+  }
+
+  .contents,
+  .players,
+  .highlights {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .content,
+  .players,
+  .highlight {
+    flex-direction: column;
+  }
+  .content-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    margin: 20px 68px 30px 16px;
+  }
+  .action-button {
+    margin-left: 15px;
+    margin-right: 20px;
+  }
+  .content img {
+    width: 329px;
+    height: 259.17px;
+    margin: 50px 15px 62px 15px;
+  }
+  .highlight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .highlight-heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0px 15px 8px;
+  }
+
+  .highlight-description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0px 15px 24px;
+  }
+
+  .highlight img {
+    margin: 29px 16px 0px 0px;
+    width: 328px;
+    height: 248px;
+    display: flex;
+  }
+
+  .footer-top img {
+    margin-top: 0px;
+    width: 271px;
+    height: 63px;
+  }
 }
